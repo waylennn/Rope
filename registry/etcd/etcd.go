@@ -41,6 +41,7 @@ type AllServiceInfo struct {
 	serviceMap map[string]*registry.Service
 }
 
+//RegisterService ...
 type RegisterService struct {
 	id          clientv3.LeaseID
 	service     *registry.Service
