@@ -7,6 +7,7 @@ import (
 	"time"
 )
 
+//ffff
 func test(ch chan int, cg *sync.WaitGroup) {
 	for {
 		select {
