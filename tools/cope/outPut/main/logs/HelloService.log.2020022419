@@ -1,0 +1,6 @@
+2020-02-24 19:01:23.597 ERROR HelloService server.go:93 2020022419012393428603 init registe etcd failed plugin is not exist
+2020-02-24 19:06:24.301 ERROR HelloService server.go:93 2020022419062421276010 init registe etcd failed plugin is not exist
+2020-02-24 19:07:02.623 ERROR HelloService server.go:93 2020022419070230767807 init registe etcd failed plugin is not exist
+2020-02-24 19:08:16.2 ERROR HelloService server.go:93 2020022419081618458028 init registe etcd failed plugin is not exist
+2020-02-24 19:12:18.824 ERROR HelloService server.go:93 2020022419121854410710 init registe etcd failed plugin is not exist
+2020-02-24 19:25:44.769 ERROR HelloService server.go:93 2020022419254478472150 init registe etcd failed plugin is not exist

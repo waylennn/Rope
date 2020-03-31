@@ -1,0 +1,4 @@
+2020-02-22 20:16:14.241 ACCESS account logger_test.go:26 2020022220161459921274 this is a good test
+2020-02-22 20:20:56.081 ACCESS account logger_test.go:31 2020022220205625440696 this is a good test
+2020-02-22 20:23:48.697 ACCESS account logger_test.go:31 2020022220234800904130 this is a good test
+2020-02-22 20:25:01.172 ACCESS account logger_test.go:29 2020022220250107506666 this is a good test
