@@ -8,6 +8,10 @@ import (
 )
 
 func TestLoad(t *testing.T) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4f008cdac20aeb2e116d997fc89c3568a6dca67a
 	var nodes []*registry.Nodes
 	temp := []int{50, 100, 150}
 	for i := 0; i < 3; i++ {

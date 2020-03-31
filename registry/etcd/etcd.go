@@ -71,6 +71,10 @@ func (e *EtcdRegistry) Init(ctx context.Context, opts ...registry.Option) (err e
 	for _, opt := range opts {
 		opt(e.options)
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4f008cdac20aeb2e116d997fc89c3568a6dca67a
 	e.client, err = clientv3.New(clientv3.Config{
 		Endpoints:   e.options.Addrs,
 		DialTimeout: e.options.TimeOut,
@@ -123,7 +127,10 @@ func (e *EtcdRegistry) run() {
 			registryService := &RegisterService{
 				service: service,
 			}
+<<<<<<< HEAD
 			fmt.Println(registryService)
+=======
+>>>>>>> 4f008cdac20aeb2e116d997fc89c3568a6dca67a
 			e.registryServiceMap[service.Name] = registryService
 		case <-ticker.C:
 			e.syncServiceFromEtcd()
@@ -197,6 +204,10 @@ func (e *EtcdRegistry) registerService(registryService *RegisterService) {
 	registryService.id = resp.ID
 	//把信息注册到etcd里面
 	e.putInfoToEtcd(registryService, registryService.id)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4f008cdac20aeb2e116d997fc89c3568a6dca67a
 	// the key 'foo' will be kept forever
 	ch, err := e.client.KeepAlive(context.TODO(), resp.ID)
 	if err != nil {
@@ -245,9 +256,14 @@ func (e *EtcdRegistry) GetService(ctx context.Context, name string) (service *re
 	if ok {
 		return
 	}
+<<<<<<< HEAD
 	//把名字拼接起来
 	key := e.servicePath(name)
 	fmt.Println("registry etcd key:", key)
+=======
+
+	key := e.servicePath(name)
+>>>>>>> 4f008cdac20aeb2e116d997fc89c3568a6dca67a
 	res, err := e.client.Get(ctx, key, clientv3.WithPrefix())
 	if err != nil {
 		fmt.Print(err)

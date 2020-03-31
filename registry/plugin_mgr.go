@@ -19,6 +19,10 @@ var (
 )
 
 func (p *PluginMgr) registerPlugin(plugin Registry) (err error) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4f008cdac20aeb2e116d997fc89c3568a6dca67a
 	p.lock.Lock()
 	defer p.lock.Unlock()
 	_, ok := p.plugins[plugin.Name()]
@@ -28,6 +32,10 @@ func (p *PluginMgr) registerPlugin(plugin Registry) (err error) {
 	}
 
 	p.plugins[plugin.Name()] = plugin
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4f008cdac20aeb2e116d997fc89c3568a6dca67a
 	return
 }
 

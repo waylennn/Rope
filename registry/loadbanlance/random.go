@@ -31,7 +31,11 @@ func (r *RandomBalance) Select(ctx context.Context, nodes []*registry.Nodes) (no
 	var totalWeight int
 	for _, node := range nodes {
 		if node.Weight == 0 {
+<<<<<<< HEAD
 			node.Weight = DefaultNodeWeight
+=======
+			totalWeight = DefaultNodeWeight
+>>>>>>> 4f008cdac20aeb2e116d997fc89c3568a6dca67a
 		}
 		totalWeight += node.Weight
 	}

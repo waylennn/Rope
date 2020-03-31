@@ -2,6 +2,10 @@ package main
 
 import (
 	"fmt"
+<<<<<<< HEAD
+=======
+	"math/rand"
+>>>>>>> 4f008cdac20aeb2e116d997fc89c3568a6dca67a
 	"sync"
 	"time"
 )
@@ -36,10 +40,18 @@ func tickerTest() {
 
 }
 func main() {
+<<<<<<< HEAD
 	// for {
 	// 	a := rand.Intn(3)
 	// 	fmt.Println(a)
 	// }
+=======
+	for {
+		a := rand.Intn(3)
+		fmt.Println(a)
+
+	}
+>>>>>>> 4f008cdac20aeb2e116d997fc89c3568a6dca67a
 	// ch := make(chan int)
 	// go test(ch, &cg)
 
@@ -50,6 +62,7 @@ func main() {
 	// time.Sleep(time.Second * 10)
 
 	// cg.Wait()
+<<<<<<< HEAD
 
 	ch := make(chan int)
 	// cg.Add(1)
@@ -76,4 +89,6 @@ func main() {
 	ch <- 2
 	time.Sleep(time.Second * 2)
 
+=======
+>>>>>>> 4f008cdac20aeb2e116d997fc89c3568a6dca67a
 }
